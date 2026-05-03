@@ -1,0 +1,50 @@
+{
+  "name": "@crewone/lighting-diagram",
+  "version": "0.1.0",
+  "description": "Top-down SVG lighting setup diagram component for React. Renders a structured key/fill/rim/hair/background light layout with subject and camera placement, in the style used by CrewOne for commercial photography pre-production.",
+  "keywords": [
+    "lighting",
+    "photography",
+    "filmmaking",
+    "react",
+    "svg",
+    "diagram",
+    "cinematography",
+    "studio-lighting",
+    "preproduction"
+  ],
+  "homepage": "https://github.com/tzipway-dotcom/crewone-lighting-diagram",
+  "bugs": {
+    "url": "https://github.com/tzipway-dotcom/crewone-lighting-diagram/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tzipway-dotcom/crewone-lighting-diagram.git"
+  },
+  "author": "Way Directs <tzipway@gmail.com> (https://crewone.ai)",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --external react",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "react": "^19.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
